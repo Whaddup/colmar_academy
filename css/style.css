@@ -3,22 +3,55 @@ html {font-size: 16px;}
 
 
 /* HEADER */
-header {border: 1px solid black;}
-.header_left {border: 1px solid black;}
-.header_right {border: 1px solid black;}
+header {border: 1px solid red;
+display: flex;
+height: 64px;}
+
+.header_left {border: 1px solid black;
+display: flex;
+flex-grow: 1;
+align-items: center;}
+
+.header_right {border: 1px solid black;
+display: flex;
+align-items: center;
+flex-grow: 0.2;}
 
 /*GRAY BACKGROUND */
-.segment_one_overall_container {border: 1px solid black;}
+.segment_one_overall_container {border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+}
 
-.main_photo_leftside_container {border: 1px solid black;}
+.main_photo_leftside_container {border: 1px solid red;
+  width: 160%;
+padding-right: 24px;
+/*  background-image: url("../assets/images/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+}
 
-.segment_one_rightside_text_container {border: 1px solid black;}
+.main_photo_leftside_container img {width: 100%;
+    margin: 32px 24px;
+}
+
+.segment_one_rightside_text_container {border: 1px solid green;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin-right: 24px;}
+
+
 .learn_something_text {border: 1px solid black;}
 .learn_something_subtext {border: 1px solid black;}
 .button {border: 3px solid red;}
 
 /*SEGMENT TWO */
-.segment_two_overall_container {border: 1px solid black;}
+.segment_two_overall_container {border: 1px solid black;
+display: flex;
+flex-direction: row;}
 
 .segment_two_leftside_container {border: 1px solid black;}
 .segment_two_leftside_picture_container {border: 1px solid black;}
@@ -28,22 +61,32 @@ header {border: 1px solid black;}
 .practice_doesnt_hurt_testimonial {border: 1px solid black;}
 
 .segment_two_rightside_container {border: 1px solid black;}
-.segment_two_rightside_top_container {border: 1px solid black;}
+.segment_two_rightside_top_container {border: 1px solid black;
+  display: flex;
+  flex-direction: row;}
 .segment_two_rightside_top_text_picture {border: 1px solid black;}
 .segment_two_rightside_top_text {border: 1px solid black;}
-.segment_two_rightside_middle_container {border: 1px solid black;}
+.segment_two_rightside_middle_container {border: 1px solid black;
+  display: flex;
+  flex-direction: row;}
 .segment_two_rightside_middle_text_picture {border: 1px solid black;}
 .segment_two_rightside_middle_text {border: 1px solid black;}
-.segment_two_rightside_bottom_container {border: 1px solid black;}
+.segment_two_rightside_bottom_container {border: 1px solid black;
+  display: flex;
+  flex-direction: row;}
 .segment_two_rightside_bottom_text_picture {border: 1px solid black;}
 .segment_two_rightside_bottom_text {border: 1px solid black;}
 
 /*SEGMENT THREE */
-.segment_three_overall_container {border: 1px solid black;}
+.segment_three_overall_container {border: 1px solid black;
+display: flex;
+flex-direction: column;}
 
 .segment_three_top_horizontal_bar_container {border: 1px solid black;}
 
-.segment_three_middle_horizontal_bar_container {border: 1px solid black;}
+.segment_three_middle_horizontal_bar_container {border: 1px solid black;
+display: flex;
+flex-direction: row;}
 .course_one_container {border: 1px solid black;}
 .course_one_image {border: 1px solid black;}
 .course_one_text {border: 1px solid black;}
@@ -54,7 +97,9 @@ header {border: 1px solid black;}
 .course_three_image {border: 1px solid black;}
 .course_three_text {border: 1px solid black;}
 
-.segment_three_bottom_horizontal_bar_container {border: 1px solid black;}
+.segment_three_bottom_horizontal_bar_container {border: 1px solid black;
+  display: flex;
+  flex-direction: row;}
 .course_four_container {border: 1px solid black;}
 .course_four_image {border: 1px solid black;}
 .course_four_text {border: 1px solid black;}
@@ -65,25 +110,52 @@ header {border: 1px solid black;}
 .course_six_image {border: 1px solid black;}
 .course_six_text {border: 1px solid black;}
 
+/* SEGMENT MOBILE */
+
+.segment_three_mobile_overall_container {border: 1px solid black;}
+
+.segment_three_mobile_top_horizontal_bar_container {border: 1px solid black;}
+
+.segment_three_mobile_courselist_container {border: 1px solid black;}
+.segment_three_mobile_course_one_container {border: 1px solid black;}
+.segment_three_mobile_course_two_container {border: 1px solid black;}
+.segment_three_mobile_course_three_container {border: 1px solid black;}
+.segment_three_mobile_course_four_container {border: 1px solid black;}
+.segment_three_mobile_course_five_container {border: 1px solid black;}
+.segment_three_mobile_course_six_container {border: 1px solid black;}
+
+@media screen and (min-width: 480px) {.segment_three_mobile_overall_container {display: none;}}
+
+/*SEGMENT THESIS */
+.segment_thesis_container {border: 1px solid black;}
+
 /*SEGMENT FOUR */
-.segment_four_overall_container {border: 1px solid black;}
+.segment_four_overall_container {border: 1px solid black;
+display: flex;
+flex-direction: row;}
 
-.segment_four_top_horizontal_bar_container {border: 1px solid black;}
-
-.segment_four_leftside_container {border: 1px solid black;}
+.segment_four_leftside_container {border: 1px solid black;
+}
 .video_container {border: 1px solid black;}
 .segment_four_leftside_text {border: 1px solid black;}
 
 .segment_four_rightside_container {border: 1px solid black;}
-.segment_four_rightside_top_container {border: 1px solid black;}
+.segment_four_rightside_top_container {border: 1px solid black;
+display: flex;
+flex-direction: row;}
 .segment_four_rightside_top_image {border: 1px solid black;}
 .segment_four_rightside_top_text {border: 1px solid black;}
 
-.segment_four_rightside_bottom_container {border: 1px solid black;}
+.segment_four_rightside_bottom_container {border: 1px solid black;
+  display: flex;
+  flex-direction: row;}
 .segment_four_rightside_bottom_image {border: 1px solid black;}
 .segment_four_rightside_bottom_text {border: 1px solid black;}
 
 /* FOOTER */
-.footer_text_container {border: 1px solid black;}
-.footer_leftside_text {border: 1px solid black;}
+.footer_text_container {border: 1px solid black;
+display: flex;}
+.footer_leftside_text {border: 1px solid black;
+display: flex;
+flex-grow: 1;}
 .footer_rightside_text {border: 1px solid black;}
