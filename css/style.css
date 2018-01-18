@@ -37,9 +37,8 @@ margin-right: 24px;}
 
 .header_right span {margin-left: 16px;}
 
-
 /*HEADER GRAY BAR */
-.header_gray_bar_container {width: 100%;
+.header_gray_bar {width: 100%;
   border: 0.3px dotted gray;
 box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 position: fixed;
