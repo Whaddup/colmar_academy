@@ -70,8 +70,22 @@ flex-direction: column;
 justify-content: center;}
 
 .learn_something_text {border: 1px solid black;}
-.learn_something_subtext {border: 1px solid black;}
-.button {border: 3px solid red;}
+.learn_something_subtext {border: 1px solid black;
+margin-top: 24px;
+margin-bottom: 24px;}
+.button_container {display: flex;
+justify-content: center;
+height: 25%;}
+.button {width: 70%;
+text-align: center;
+background-color: #555959;
+padding-top: 8px;
+padding-bottom: 8px;
+border-radius: 3px;
+cursor: pointer;
+height: 26%;}
+
+.button:active {margin-top: 0.5px;}
 
 /*SEGMENT TWO */
 .segment_two_overall_container {border: 1px solid black;
@@ -87,7 +101,6 @@ padding: 32px 24px;
 
 .segment_two_leftside_picture_container {border: 1px solid black;}
 .segment_two_leftside_picture_container  img {width: 100%;}
-
 .segment_two_leftside_text_container {border: 1px solid black;}
 .practice_doesnt_hurt_text {border: 1px solid black;
 text-align: center;
@@ -250,7 +263,10 @@ width: 970px;}
 .video_container {border: 1px solid green;
 width: 100%;}
 .video_container video {width: 100%; }
-.segment_four_leftside_text {border: 1px solid black;}
+.segment_four_leftside_text {border: 1px solid black;
+padding-bottom: 32px;}
+.segment_four_leftside_text_1 {padding-top: 24px;
+padding-bottom: 8px;}
 
 .segment_four_rightside_container {border: 1px solid black;
 width: 40%;}
@@ -280,7 +296,7 @@ width: 65%;}
 display: flex;
 justify-content: center;}
 
-.gray_line {width: 80%;
+.gray_line {width: 100%;
 box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 border: 0.3px gray dotted;}
 
@@ -315,14 +331,24 @@ font-size: 1.1rem;
 font-weight: 650;
 letter-spacing: -1px;}
 
+.header_nav_font a:link {color: black;
+text-decoration: none;}
+.header_nav_font a:visited: {color: black;}
+.header_nav_font a:hover{color: black;
+font-weight: 900;
+font-size: 1.1rem;}
+.header_nav_font a:active{color: black;}
+
 #first_headline_font {font-family: "junge";
 font-weight: 600;
 font-size: 2.5rem;}
 
-#first_subheadline_font {font-family: "spectral";
+#first_subheadline_font, .button {font-family: "spectral";
 font-size: 1.15rem;
 font-weight: 400;
 letter-spacing: -1px;}
+
+.button {color: white;}
 
 .second_headline_font {font-size: 2rem;
 font-family: "junge";
@@ -331,6 +357,7 @@ letter-spacing: -0.85px;}
 
 .third_headline_font {font-family: "spectral";
 font-size: 1.35rem;
+font-weight: 550;
 letter-spacing: -1px;}
 
 .mini_text_font {font-family: "arapey";
@@ -339,6 +366,13 @@ font-size: 1.0rem; }
 
 #testimonial_font {font-family: "arapey";
 font-weight: bold;}
+
+a:link {color: yellow;}
+a:visited: {color: blue;}
+a:hover{color: blue;
+font-weight: 900;
+font-size: 1.1rem;}
+a:active{color: blue;}
 
 .footer_font {font-family: "arapey";
 letter-spacing: 0.3px;
