@@ -13,18 +13,33 @@ width: 1228px;}
 .header_left {border: 1px solid black;
 display: flex;
 flex-grow: 1;
-align-items: center;}
+align-items: center;
+margin-left: 24px;}
+
+.header_left_logo_container {border: 3px green solid;
+  height: 80%;
+  width: 6%;
+background-image: url("../assets/images/ic-logo.svg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;}
+
 
 .header_right {border: 1px solid black;
 display: flex;
 align-items: center;
-flex-grow: 0.2;}
+justify-content: flex-end;
+flex-grow: 0.2;
+margin-right: 24px;}
+
+.header_right span {margin-left: 16px;}
 
 /*GRAY BACKGROUND */
 .segment_one_overall_container {border: 1px solid black;
   display: flex;
   flex-direction: row;
-width: 1228px;}
+width: 1228px;
+background-color: rgba(192,201,200,0.75);}
 
 .main_photo_leftside_container {border: 1px solid red;
   width: 60%;
@@ -42,8 +57,7 @@ width: 1228px;}
 width: 40%;
 display: flex;
 flex-direction: column;
-justify-content: center;
-}
+justify-content: center;}
 
 .learn_something_text {border: 1px solid black;}
 .learn_something_subtext {border: 1px solid black;}
@@ -196,8 +210,7 @@ padding-top: 32px;
 padding-bottom: 32px;}
 
 /*SEGMENT FOUR */
-.segment_four_overall_container {border: 5px dashed red;
-display: flex;
+.segment_four_overall_container {display: flex;
 flex-direction: row;
 width: 1228px;}
 
@@ -232,30 +245,70 @@ margin: 16px 16px}
 .segment_four_rightside_bottom_text {border: 1px solid black;
 width: 65%;}
 
+/* GREY LINE */
+
+.gray_line_container {width: 1228px;
+}
+
+.gray_line {margin-left: 72px;
+margin-right: 72px;
+border: 1px red solid;}
+
+
 /* FOOTER */
-.footer_text_container {border: 1px solid black;
-display: flex;
+.footer_text_container {display: flex;
 width: 1228px;
-padding: 16px 24px;}
+padding-top: 16px;}
 .footer_leftside_text {border: 1px solid black;
 display: flex;
-flex-grow: 1;}
-.footer_rightside_text {border: 1px solid black;}
+flex-grow: 1;
+margin-left: 24px;}
+.footer_rightside_text {border: 1px solid black;
+margin-right: 24px;}
 
 /*FONTS*/
 
+.header_logo_font {font-family: "IM Fell DW Pica SC";
+font-size: 1.85rem;
+font-weight: 100;}
+
+#header_colmar_font {font-weight: 700;}
+
+.header_nav_font {font-family: "spectral";
+font-size: 1.3rem;
+font-weight: 650;
+letter-spacing: -1px;}
+
+#first_headline_font {font-family: "junge";
+font-weight: 600;
+font-size: 3rem;}
+
+#first_subheadline_font {font-family: "spectral";
+font-size: 1.5rem;
+font-weight: 400;
+letter-spacing: -1px;}
+
 .second_headline_font {font-size: 2.5rem;
-font-family: "spectral";
-font-weight: 500;}
+font-family: "junge";
+font-weight: 500;
+letter-spacing: -0.85px;}
 
 .third_headline_font {font-family: "spectral";
-font-size: 1.75rem;}
+font-size: 1.75rem;
+letter-spacing: -1px;}
 
 .mini_text_font {font-family: "arapey";
-letter-spacing: 0.3px; }
+letter-spacing: 0.3px;
+font-size: 1.05rem; }
 
 #testimonial_font {font-family: "arapey";
 font-weight: bold;}
+
+.footer_font {font-family: "arapey";
+letter-spacing: 0.3px;
+font-size: 0.9rem; }
+
+#terms_font {margin-right: 16px;}
 
 /*font-family: 'Raleway', sans-serif;
 font-family: 'Playfair Display', serif;
@@ -263,4 +316,9 @@ font-family: 'Arapey', serif;
 font-family: 'Taviraj', serif;
 font-family: 'Judson', serif;
 font-family: 'Spectral', serif;
-font-family: 'Maitree', serif;*/
+font-family: 'Maitree', serif;
+font-family: 'IM Fell English SC', serif;
+font-family: 'Junge', serif;
+font-family: 'Cormorant SC', serif;
+font-family: 'IM Fell DW Pica SC', serif;
+font-family: 'Suranna', serif;*/
