@@ -39,7 +39,7 @@ margin-right: 24px;}
 
 /*HEADER GRAY BAR */
 .header_gray_bar {width: 100%;
-  border: 0.3px dotted gray;
+  border: 0.3px gray solid;
 box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 position: fixed;
 margin-top: 64px;}
@@ -90,9 +90,12 @@ padding: 32px 24px;
 
 .segment_two_leftside_text_container {border: 1px solid black;}
 .practice_doesnt_hurt_text {border: 1px solid black;
-text-align: center;}
+text-align: center;
+margin-top: 32px;
+margin-bottom: 32px; }
 .practice_doesnt_hurt_subtext {border: 1px solid black;}
-.practice_doesnt_hurt_testimonial {border: 1px solid black;}
+.practice_doesnt_hurt_testimonial {border: 1px solid black;
+margin-top: 6px;}
 
 .segment_two_rightside_container {border: 5px solid red;
 width: 40%;
@@ -103,7 +106,8 @@ padding-top: 32px;}
   flex-direction: row;}
 .segment_two_rightside_top_picture {border: 1px solid black;
 width: 35%;
-margin-left: 16px;}
+margin-left: 16px;
+margin-right: 16px;}
 .segment_two_rightside_top_picture img {width: 100%;}
 .segment_two_rightside_top_text {border: 1px solid black;
 width: 65%;}
@@ -114,7 +118,8 @@ width: 65%;}
 .segment_two_rightside_middle_picture {border: 1px solid black;
 width: 35%;
 height: auto;
-margin-left: 16px;}
+margin-left: 16px;
+margin-right: 16px;}
 .segment_two_rightside_middle_picture img {width: 100%;
 height: auto;}
 .segment_two_rightside_middle_text {border: 1px solid black;
@@ -126,7 +131,8 @@ width: 65%;}
 .segment_two_rightside_bottom_picture {border: 1px solid black;
 width: 35%;
 height: auto;
-margin-left: 16px;}
+margin-left: 16px;
+margin-right: 16px;}
 .segment_two_rightside_bottom_picture img {width: 100%;
 height: auto;}
 .segment_two_rightside_bottom_text {border: 1px solid black;
@@ -153,7 +159,9 @@ margin-left: 72px;
 background-color: white;}
 .course_one_image {border: 1px solid black;}
 .course_one_image img {width: 100%;}
-.course_one_text {border: 1px solid black;}
+.course_one_text {border: 1px solid black;
+margin-left: 16px;
+margin-bottom: 24px;}
 .course_two_container {border: 1px solid black;
 width: 28%;
 margin-left: 32px;
@@ -161,25 +169,32 @@ margin-right: 32px;
 background-color: white;}
 .course_two_image {border: 1px solid black;}
 .course_two_image img {width: 100%;}
-.course_two_text {border: 1px solid black;}
+.course_two_text {border: 1px solid black;
+margin-left: 16px;
+padding-bottom: 24px;}
 .course_three_container {border: 1px solid black;
 width: 28%;
 margin-right: 72px;
 background-color: white;}
 .course_three_image {border: 1px solid black;}
 .course_three_image img {width: 100%;}
-.course_three_text {border: 1px solid black;}
+.course_three_text {border: 1px solid black;
+margin-left: 16px;}
 
 .segment_three_bottom_horizontal_bar_container {border: 1px solid black;
   display: flex;
-  flex-direction: row;}
+  flex-direction: row;
+margin-top:32px;
+margin-bottom: 32px;}
 .course_four_container {border: 1px solid black;
 width: 28%;
 margin-left: 72px;
 background-color: white;}
 .course_four_image {border: 1px solid black;}
 .course_four_image img {width: 100%;}
-.course_four_text {border: 1px solid black;}
+.course_four_text {border: 1px solid black;
+margin-left: 16px;
+padding-bottom: 24px;}
 .course_five_container {border: 1px solid black;
 width: 28%;
 margin-left: 32px;
@@ -187,14 +202,18 @@ margin-right: 32px;
 background-color: white;}
 .course_five_image {border: 1px solid black;}
 .course_five_image img {width: 100%;}
-.course_five_text {border: 1px solid black;}
+.course_five_text {border: 1px solid black;
+margin-left: 16px;
+padding-bottom: 24px;}
 .course_six_container {border: 1px solid black;
 width: 28%;
 margin-right: 72px;
 background-color: white;}
 .course_six_image {border: 1px solid black;}
 .course_six_image img {width: 100%;}
-.course_six_text {border: 1px solid black;}
+.course_six_text {border: 1px solid black;
+margin-left: 16px;
+padding-bottom: 24px;}
 
 /* SEGMENT MOBILE */
 
@@ -261,9 +280,9 @@ width: 65%;}
 display: flex;
 justify-content: center;}
 
-.gray_line {
-width: 80%;
-border: 3px red solid;}
+.gray_line {width: 80%;
+box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+border: 0.3px gray dotted;}
 
 
 /* FOOTER */
@@ -276,6 +295,12 @@ flex-grow: 1;
 margin-left: 24px;}
 .footer_rightside_text {border: 1px solid black;
 margin-right: 24px;}
+
+
+/* COMMON SPACING ACROSS THE PAGE */
+
+.mini_text_spacing {margin-top: 6px;
+margin-bottom: 6px;}
 
 /*FONTS*/
 
@@ -301,7 +326,7 @@ letter-spacing: -1px;}
 
 .second_headline_font {font-size: 2rem;
 font-family: "junge";
-font-weight: 500;
+font-weight: 600;
 letter-spacing: -0.85px;}
 
 .third_headline_font {font-family: "spectral";
