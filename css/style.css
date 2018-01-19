@@ -40,6 +40,47 @@ border: 1px black solid;}
 
 #header_sign_in {padding-right: 24px;}
 
+
+@media screen and (max-width: 880px) {
+
+.header_body_container {width: 100%;}
+
+.header_left {justify-content: space-between;}
+
+.header_mobile_left_logo_container_1 {border: 3px green solid;
+height: 80%;
+width: 6%;
+background-image: url("../assets/images/ic-on-campus.svg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;}
+
+
+.header_mobile_left_logo_container_2 {border: 3px green solid;
+height: 80%;
+width: 6%;
+background-image: url("../assets/images/ic-online.svg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;}
+
+.header_mobile_left_logo_container_3 {border: 3px green solid;
+height: 80%;
+width: 6%;
+background-image: url("../assets/images/ic-login.svg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+margin-right: 24px;}
+
+.header_logo_font {display: none;}
+
+.header_right {display: none;}
+}
+
+
+
+
 /*HEADER GRAY BAR */
 .header_gray_bar {width: 100%;
   border: 0.3px gray solid;
@@ -113,13 +154,21 @@ margin-bottom: 32px; }
 .practice_doesnt_hurt_testimonial {border: 1px solid black;
 margin-top: 6px;}
 
-.segment_two_rightside_container {border: 5px solid red;
+.segment_two_rightside_container {border: 1px solid black;
 width: 40%;
 height: auto;
 padding-top: 32px;}
 .segment_two_rightside_top_container {border: 1px solid black;
   display: flex;
   flex-direction: row;}
+
+.segment_two_rightside_top_container:hover,
+.segment_two_rightside_middle_container:hover,
+.segment_two_rightside_bottom_container:hover,
+.segment_four_rightside_top_container:hover,
+.segment_four_rightside_bottom_container:hover
+{background-color: rgba(192,201,200,0.75);}
+
 .segment_two_rightside_top_picture {border: 1px solid black;
 width: 35%;
 margin-left: 16px;
@@ -169,7 +218,7 @@ text-align: center;}
 .segment_three_middle_horizontal_bar_container {border: 1px solid black;
 display: flex;
 flex-direction: row;}
-.course_one_container {border: 3px solid red;
+.course_one_container {border: 1px solid black;
 width: 28%;
 margin-left: 72px;
 background-color: white;}
