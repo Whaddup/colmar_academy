@@ -2,6 +2,7 @@ html {font-size: 16px;}
 
 body{margin-top: 0px;
 margin-left: 0px;
+margin-right: 0px;
 }
 
 /* HEADER */
@@ -135,7 +136,6 @@ height: 26%;}
 .button:active {margin-top: 0.5px;}
 
 /* MEDIA INQUIRY FOR GRAY BACKGROUND SEGMENT */
-
 @media screen and (max-width: 480px) {
 
 .segment_one_overall_container {border: 1px solid black;
@@ -169,7 +169,6 @@ margin-bottom: 32px;}
   margin-left: 16px;
   margin-right: 16px;}
 }
-
 /*END OF MEDIA INQURY FOR GRAY BACKGROUND */
 
 
@@ -181,9 +180,7 @@ width: 970px;}
 
 .segment_two_leftside_container {border: 1px solid black;
 width: 60%;
-padding: 32px 24px;
-}
-
+padding: 32px 24px;}
 
 .segment_two_leftside_picture_container {border: 1px solid black;}
 .segment_two_leftside_picture_container  img {width: 100%;}
@@ -244,6 +241,49 @@ margin-right: 16px;}
 height: auto;}
 .segment_two_rightside_bottom_text {border: 1px solid black;
 width: 65%;}
+
+@media screen and (min-width: 480px) {
+.mobile-photo {display: none;}}
+
+/*MEDIA INQUIRY FOR SEGMENT TWO */
+
+@media screen and (max-width: 480px) {
+
+.segment_two_overall_container {flex-direction: column;
+width: 100%;}
+
+.segment_two_leftside_container {display: none;}
+
+.segment_two_rightside_container {width: 100%;
+  padding-top: 16px;}
+
+.course_photos_original_size {display: none;}
+
+.segment_two_rightside_top_container, .segment_two_rightside_middle_container,
+.segment_two_rightside_bottom_container {flex-direction: column;
+  width: 100%;}
+
+.segment_two_rightside_middle_container {margin-top: 64px;
+margin-bottom: 64px;}
+
+.segment_two_rightside_top_picture, .segment_two_rightside_middle_picture,
+.segment_two_rightside_bottom_picture {width: 92%;
+margin: 0px 0px;
+padding-left: 16px;
+padding-right: 16px;}
+
+.mobile-photo {display: block;
+  width:100%;}
+
+.segment_two_rightside_top_text, .segment_two_rightside_middle_text,
+.segment_two_rightside_bottom_text {width: 96%;
+padding-left: 16px;}
+
+.segment_two_rightside_bottom_text {margin-bottom: 32px;}
+}
+/*END OF MEDIA INQUIRY FOR SEGMENT TWO*/
+
+
 
 /*SEGMENT THREE */
 .segment_three_overall_container {border: 1px solid black;
