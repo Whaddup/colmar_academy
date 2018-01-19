@@ -1,6 +1,8 @@
 html {font-size: 16px;}
 
-body{margin-top: 0px;}
+body{margin-top: 0px;
+margin-left: 0px;
+}
 
 /* HEADER */
 header {width: 100%;
@@ -20,9 +22,9 @@ flex-grow: 1;
 align-items: center;
 margin-left: 24px;}
 
-.header_left_logo_container {border: 3px green solid;
-  height: 80%;
-  width: 6%;
+.header_left_logo_container {
+  height: 85%;
+  width: 10%;
 background-image: url("../assets/images/ic-logo.svg");
 background-repeat: no-repeat;
 background-position: center;
@@ -40,33 +42,35 @@ border: 1px black solid;}
 
 #header_sign_in {padding-right: 24px;}
 
-
-@media screen and (max-width: 880px) {
+/* MEDIA INQURY FOR HEADER */
+@media screen and (max-width: 480px) {
 
 .header_body_container {width: 100%;}
 
 .header_left {justify-content: space-between;}
 
+.header_left_logo_container {height: 60%;
+  width: 8%;}
+
 .header_mobile_left_logo_container_1 {border: 3px green solid;
-height: 80%;
-width: 6%;
+height: 60%;
+width: 8%;
 background-image: url("../assets/images/ic-on-campus.svg");
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;}
 
-
 .header_mobile_left_logo_container_2 {border: 3px green solid;
-height: 80%;
-width: 6%;
+height: 60%;
+width: 8%;
 background-image: url("../assets/images/ic-online.svg");
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;}
 
 .header_mobile_left_logo_container_3 {border: 3px green solid;
-height: 80%;
-width: 6%;
+height: 60%;
+width: 8%;
 background-image: url("../assets/images/ic-login.svg");
 background-repeat: no-repeat;
 background-position: center;
@@ -77,9 +81,7 @@ margin-right: 24px;}
 
 .header_right {display: none;}
 }
-
-
-
+/* END OF MEDIA INQUIRY FOR HEADER*/
 
 /*HEADER GRAY BAR */
 .header_gray_bar {width: 100%;
@@ -117,7 +119,8 @@ justify-content: center;}
 .learn_something_subtext {border: 1px solid black;
 margin-top: 24px;
 margin-bottom: 24px;}
-.button_container {display: flex;
+.button_container {border: 3px yellow solid;
+  display: flex;
 justify-content: center;
 height: 25%;}
 .button {width: 70%;
@@ -130,6 +133,45 @@ cursor: pointer;
 height: 26%;}
 
 .button:active {margin-top: 0.5px;}
+
+/* MEDIA INQUIRY FOR GRAY BACKGROUND SEGMENT */
+
+@media screen and (max-width: 480px) {
+
+.segment_one_overall_container {border: 1px solid black;
+flex-direction: column;
+align-items: center;
+width: 100%;
+background-color: rgba(192,201,200,0.75);}
+
+.main_photo_leftside_container {border: 1px solid red;
+width: 100%;
+padding-top: 0px;
+padding-bottom:32px;}
+
+.segment_one_rightside_text_container {border: 5px solid green;
+width: 100%;}
+
+.learn_something_text {border: 1px solid black;
+padding-left: 16px;
+padding-right: 16px;}
+
+.learn_something_subtext {border: 1px solid black;
+margin-top: 32px;
+margin-bottom: 24px;
+padding-left: 16px;
+padding-right: 16px;}
+
+.button_container {min-height: 50px;
+margin-bottom: 32px;}
+
+.button {width: 100%;
+  margin-left: 16px;
+  margin-right: 16px;}
+}
+
+/*END OF MEDIA INQURY FOR GRAY BACKGROUND */
+
 
 /*SEGMENT TWO */
 .segment_two_overall_container {border: 1px solid black;
