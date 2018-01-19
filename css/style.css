@@ -33,9 +33,12 @@ display: flex;
 align-items: center;
 justify-content: flex-end;
 flex-grow: 0.2;
-margin-right: 24px;}
+}
 
-.header_right span {margin-left: 16px;}
+.header_right span {margin-left: 16px;
+border: 1px black solid;}
+
+#header_sign_in {padding-right: 24px;}
 
 /*HEADER GRAY BAR */
 .header_gray_bar {width: 100%;
@@ -328,14 +331,14 @@ font-weight: 100;}
 
 .header_nav_font {font-family: "spectral";
 font-size: 1.1rem;
-font-weight: 650;
+font-weight: 600;
 letter-spacing: -1px;}
 
 .header_nav_font a:link {color: black;
 text-decoration: none;}
 .header_nav_font a:visited: {color: black;}
 .header_nav_font a:hover{color: black;
-font-weight: 900;
+font-weight: 650;
 font-size: 1.1rem;}
 .header_nav_font a:active{color: black;}
 
@@ -348,7 +351,8 @@ font-size: 1.15rem;
 font-weight: 400;
 letter-spacing: -1px;}
 
-.button {color: white;}
+.button a {color: white;
+text-decoration: none;}
 
 .second_headline_font {font-size: 2rem;
 font-family: "junge";
@@ -367,12 +371,12 @@ font-size: 1.0rem; }
 #testimonial_font {font-family: "arapey";
 font-weight: bold;}
 
-a:link {color: yellow;}
-a:visited: {color: blue;}
-a:hover{color: blue;
+.course_links a:link {color: blue;}
+.course_links a:visited: {color: blue;}
+.course_links a:hover{color: blue;
 font-weight: 900;
 font-size: 1.1rem;}
-a:active{color: blue;}
+.course_links a:active{color: blue;}
 
 .footer_font {font-family: "arapey";
 letter-spacing: 0.3px;
