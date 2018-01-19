@@ -362,8 +362,7 @@ background-color: white;}
 margin-left: 16px;
 padding-bottom: 24px;}
 
-/* SEGMENT MOBILE */
-
+/* MEDIA INQUIRY FOR MOBILE SEGMENT THREE */
 
 @media screen and (min-width: 480px) {.segment_three_mobile_overall_container {display: none;}}
 
@@ -374,7 +373,6 @@ padding-bottom: 24px;}
 display: flex;
 flex-direction: column;
 width: 100%;}
-
 
 .segment_three_mobile_top_horizontal_bar_container {border: 1px solid black;
 text-align: center;
@@ -392,7 +390,6 @@ padding-right: 16px;}
 .segment_three_mobile_course_six_container {border: 1px solid black;
 margin-bottom: 32px;}
 
-
 .segment_three_mobile_course_one_container, .segment_three_mobile_course_two_container,
 .segment_three_mobile_course_three_container, .segment_three_mobile_course_four_container,
 .segment_three_mobile_course_five_container, .segment_three_mobile_course_six_container {padding-top: 16px;
@@ -404,6 +401,8 @@ background-color: rgba(192,201,200,0.75);}
 .segment_three_mobile_course_three_container, .segment_three_mobile_course_four_container,
 .segment_three_mobile_course_five_container {margin-bottom: 8px;}
 }
+/* END OF MEDIA INQUIRY FOR MOBILE SEGMENT THREE */
+
 
 
 /*SEGMENT THESIS */
@@ -412,6 +411,8 @@ width: 970px;
 text-align: center;
 padding-top: 32px;
 padding-bottom: 32px;}
+
+
 
 /*SEGMENT FOUR */
 .segment_four_overall_container {display: flex;
@@ -473,6 +474,67 @@ flex-grow: 1;
 margin-left: 24px;}
 .footer_rightside_text {border: 1px solid black;
 margin-right: 24px;}
+
+
+
+
+
+/* MEDIA INQUIRY FOR THESIS SEGMENT AND SEGMENT FOUR */
+
+@media screen and (max-width: 480px) {
+.segment_thesis_container{width: 100%;
+  padding-bottom: 16px;}
+
+.segment_four_overall_container {width: 100%;}
+
+.segment_four_leftside_container {border: 1px solid black;
+  width: 100%;
+padding-left: 0px;
+padding-right: 0px; }
+
+.segment_four_leftside_text {display: none;}
+
+.segment_four_rightside_container {display: none;}
+
+/* MEDIA INQUIRY FOR THESIS SEGMENT AND SEGMENT FOUR */
+
+@media screen and (max-width: 480px) {
+.segment_thesis_container{width: 100%;
+  padding-bottom: 16px;}
+
+.segment_four_overall_container {width: 100%;}
+
+.segment_four_leftside_container {border: 1px solid black;
+  width: 100%;}
+
+.segment_four_leftside_text {display: none;}
+
+.segment_four_rightside_container {display: none;}
+
+.gray_line_container {width: 100%;
+margin-bottom: 24px;}
+
+footer {width: 100%;}
+
+.footer_text_container {margin-bottom: 16px;}
+
+.footer_leftside_text {margin-left: 16px;}
+
+.footer_rightside_text {margin-right: 16px;}
+
+.gray_line_mobile {margin: 0px 0px;
+padding: 0px 0px;}
+}
+
+
+
+/* END OF MEDIA INQUIRTY FOR THESIS SEGMENT AND SEGMENT FOUR */
+.footer_text_container {width: 100%;}
+}
+
+
+
+/* END OF MEDIA INQUIRTY FOR THESIS SEGMENT AND SEGMENT FOUR */
 
 
 /* COMMON SPACING ACROSS THE PAGE */
