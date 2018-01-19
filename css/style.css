@@ -364,19 +364,47 @@ padding-bottom: 24px;}
 
 /* SEGMENT MOBILE */
 
-.segment_three_mobile_overall_container {border: 1px solid black;}
 
-.segment_three_mobile_top_horizontal_bar_container {border: 1px solid black;}
+@media screen and (min-width: 480px) {.segment_three_mobile_overall_container {display: none;}}
 
-.segment_three_mobile_courselist_container {border: 1px solid black;}
+@media screen and (max-width: 480px) {
+.segment_three_overall_container {display: none;}
+
+.segment_three_mobile_overall_container {border: 1px solid black;
+display: flex;
+flex-direction: column;
+width: 100%;}
+
+
+.segment_three_mobile_top_horizontal_bar_container {border: 1px solid black;
+text-align: center;
+margin-top: 32px;
+margin-bottom: 16px;}
+
+.segment_three_mobile_courselist_container {border: 1px solid black;
+padding-left: 16px;
+padding-right: 16px;}
 .segment_three_mobile_course_one_container {border: 1px solid black;}
 .segment_three_mobile_course_two_container {border: 1px solid black;}
 .segment_three_mobile_course_three_container {border: 1px solid black;}
 .segment_three_mobile_course_four_container {border: 1px solid black;}
 .segment_three_mobile_course_five_container {border: 1px solid black;}
-.segment_three_mobile_course_six_container {border: 1px solid black;}
+.segment_three_mobile_course_six_container {border: 1px solid black;
+margin-bottom: 32px;}
 
-@media screen and (min-width: 480px) {.segment_three_mobile_overall_container {display: none;}}
+
+.segment_three_mobile_course_one_container, .segment_three_mobile_course_two_container,
+.segment_three_mobile_course_three_container, .segment_three_mobile_course_four_container,
+.segment_three_mobile_course_five_container, .segment_three_mobile_course_six_container {padding-top: 16px;
+  padding-bottom: 24px;
+padding-left: 16px;
+background-color: rgba(192,201,200,0.75);}
+
+.segment_three_mobile_course_one_container, .segment_three_mobile_course_two_container,
+.segment_three_mobile_course_three_container, .segment_three_mobile_course_four_container,
+.segment_three_mobile_course_five_container {margin-bottom: 8px;}
+}
+
 
 /*SEGMENT THESIS */
 .segment_thesis_container {border: 1px solid black;
@@ -485,12 +513,12 @@ letter-spacing: -1px;}
 .button a {color: white;
 text-decoration: none;}
 
-.second_headline_font {font-size: 2rem;
+.second_headline_font, .second_headline_mobile_font {font-size: 2rem;
 font-family: "junge";
 font-weight: 600;
 letter-spacing: -0.85px;}
 
-.third_headline_font {font-family: "spectral";
+.third_headline_font, .third_headline_mobile_font {font-family: "spectral";
 font-size: 1.35rem;
 font-weight: 550;
 letter-spacing: -1px;}
