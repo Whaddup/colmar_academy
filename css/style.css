@@ -115,7 +115,7 @@ justify-content: center;
 height: 25%;}
 .button {width: 70%;
 text-align: center;
-background-color: #555959;
+background-color: #F23546;
 padding-top: 8px;
 padding-bottom: 8px;
 border-radius: 3px;
@@ -413,8 +413,6 @@ flex-grow: 1;
 margin-left: 24px;}
 .footer_rightside_text {margin-right: 24px;}
 
-
-
 /* MEDIA INQUIRY FOR THESIS SEGMENT AND SEGMENT FOUR */
 
 @media screen and (max-width: 480px) {
@@ -426,20 +424,6 @@ margin-left: 24px;}
 .segment_four_leftside_container {width: 100%;
 padding-left: 0px;
 padding-right: 0px; }
-
-.segment_four_leftside_text {display: none;}
-
-.segment_four_rightside_container {display: none;}
-
-/* MEDIA INQUIRY FOR THESIS SEGMENT AND SEGMENT FOUR */
-
-@media screen and (max-width: 480px) {
-.segment_thesis_container{width: 100%;
-  padding-bottom: 16px;}
-
-.segment_four_overall_container {width: 100%;}
-
-.segment_four_leftside_container {width: 100%;}
 
 .segment_four_leftside_text {display: none;}
 
@@ -458,21 +442,20 @@ footer {width: 100%;}
 
 .gray_line_mobile {margin: 0px 0px;
 padding: 0px 0px;}
-}
 
-
-
-/* END OF MEDIA INQUIRTY FOR THESIS SEGMENT AND SEGMENT FOUR */
 .footer_text_container {width: 100%;}
 }
-
-
-
 /* END OF MEDIA INQUIRTY FOR THESIS SEGMENT AND SEGMENT FOUR */
+
+/* MEDIA INQUIRY FOR GRAY LINES IN MOBILE VERSION */
+@media screen and (min-width: 480px) {
+  .gray_line_mobile {display: none;}
+}
+/* END OF MEDIA INQUIRY FOR GRAY LINES IN MOBILE VERSION */
+
 
 
 /* COMMON SPACING ACROSS THE PAGE */
-
 .mini_text_spacing {margin-top: 6px;
 margin-bottom: 6px;}
 
@@ -480,9 +463,11 @@ margin-bottom: 6px;}
 
 .header_logo_font {font-family: "IM Fell DW Pica SC";
 font-size: 1.75rem;
-font-weight: 100;}
+font-weight: 100;
+color: #F23546;}
 
-#header_colmar_font {font-weight: 700;}
+#header_colmar_font {font-weight: 700;
+color: black;}
 
 .header_nav_font {font-family: "spectral";
 font-size: 1.1rem;
@@ -499,7 +484,8 @@ font-size: 1.1rem;}
 
 #first_headline_font {font-family: "junge";
 font-weight: 600;
-font-size: 2.5rem;}
+font-size: 2.5rem;
+color: #F23546;}
 
 #first_subheadline_font, .button {font-family: "spectral";
 font-size: 1.15rem;
@@ -507,7 +493,8 @@ font-weight: 400;
 letter-spacing: -1px;}
 
 .button a {color: white;
-text-decoration: none;}
+text-decoration: none;
+font-weight: 550;}
 
 .second_headline_font, .second_headline_mobile_font {font-size: 2rem;
 font-family: "junge";
