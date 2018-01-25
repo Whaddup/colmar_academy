@@ -1,0 +1,503 @@
+html {font-size: 16px;}
+
+body{margin-top: 0px;
+margin-left: 0px;
+margin-right: 0px;
+}
+
+/* HEADER */
+header {width: 100%;
+display: flex;
+justify-content: center;
+background-color: white;}
+
+.header_body_container {display: flex;
+  position: fixed;
+  height: 64px;
+  width: 970px;
+background-color: white;}
+
+.header_left {display: flex;
+flex-grow: 1;
+align-items: center;
+margin-left: 24px;}
+
+.header_left_logo_container {
+  height: 85%;
+  width: 10%;
+background-image: url("../assets/images/ic-logo.svg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;}
+
+.header_right {display: flex;
+align-items: center;
+justify-content: flex-end;
+flex-grow: 0.2;
+}
+
+.header_right span {margin-left: 16px;}
+
+#header_sign_in {padding-right: 24px;}
+
+/* MEDIA INQURY FOR HEADER  (MOBILE VERSION) */
+@media screen and (max-width: 480px) {
+
+.header_body_container {width: 100%;}
+
+.header_left {justify-content: space-between;}
+
+.header_left_logo_container {height: 60%;
+  width: 8%;}
+
+.header_mobile_left_logo_container_1 {height: 60%;
+width: 8%;
+background-image: url("../assets/images/ic-on-campus.svg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;}
+
+.header_mobile_left_logo_container_2 {height: 60%;
+width: 8%;
+background-image: url("../assets/images/ic-online.svg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;}
+
+.header_mobile_left_logo_container_3 {height: 60%;
+width: 8%;
+background-image: url("../assets/images/ic-login.svg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+margin-right: 24px;}
+
+.header_logo_font {display: none;}
+
+.header_right {display: none;}
+}
+/* END OF MEDIA INQUIRY FOR HEADER*/
+
+/*GRAY BAR UNDER HEADER*/
+.header_gray_bar {width: 100%;
+  border: 0.3px gray solid;
+box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+position: fixed;
+margin-top: 64px;}
+
+/*CONTAINER FOR EVERYTHING UNDER THE HEADER */
+.overall_body_container {display: flex;
+  flex-direction: column;
+align-items: center;
+margin-top:66px;}
+
+/*HORIZONTAL SEGMENT "LEARN SOMETHING NEW EVERYDAY" */
+.segment_one_overall_container {  display: flex;
+  flex-direction: row;
+width: 970px;
+background-color: rgba(192,201,200,0.75);}
+
+.main_photo_leftside_container {width: 60%;
+  padding: 24px 32px;}
+
+.main_photo_leftside_container img {width: 100%;}
+
+.segment_one_rightside_text_container {width: 40%;
+display: flex;
+flex-direction: column;
+justify-content: center;}
+
+.learn_something_subtext {margin-top: 24px;
+margin-bottom: 24px;}
+.button_container {  display: flex;
+justify-content: center;
+height: 25%;}
+.button {width: 70%;
+text-align: center;
+background-color: #F23546;
+padding-top: 8px;
+padding-bottom: 8px;
+border-radius: 3px;
+cursor: pointer;
+height: 26%;}
+
+.button:active {margin-top: 0.5px;}
+
+/* MEDIA INQUIRY FOR GRAY BACKGROUND SEGMENT (MOBILE VERSION) */
+@media screen and (max-width: 480px) {
+
+.segment_one_overall_container {flex-direction: column;
+align-items: center;
+width: 100%;
+background-color: rgba(192,201,200,0.75);}
+
+.main_photo_leftside_container {width: 100%;
+padding-top: 0px;
+padding-bottom:32px;}
+
+.segment_one_rightside_text_container {width: 100%;}
+
+.learn_something_text {padding-left: 16px;
+padding-right: 16px;}
+
+.learn_something_subtext {margin-top: 32px;
+margin-bottom: 24px;
+padding-left: 16px;
+padding-right: 16px;}
+
+.button_container {min-height: 50px;
+margin-bottom: 32px;}
+
+.button {width: 100%;
+  margin-left: 16px;
+  margin-right: 16px;}
+}
+/*END OF MEDIA INQURY FOR GRAY BACKGROUND */
+
+/*HORIZONTAL SEGMENT FOR "IT DOESN'T HURT TO KEEP PRACTICING"*/
+.segment_two_overall_container {display: flex;
+flex-direction: row;
+width: 970px;}
+
+.segment_two_leftside_container {width: 60%;
+padding: 32px 24px;}
+
+.segment_two_leftside_picture_container  img {width: 100%;}
+.practice_doesnt_hurt_text {text-align: center;
+margin-top: 32px;
+margin-bottom: 32px; }
+.practice_doesnt_hurt_testimonial {margin-top: 6px;}
+
+.segment_two_rightside_container {width: 40%;
+height: auto;
+padding-top: 32px;}
+.segment_two_rightside_top_container {display: flex;
+  flex-direction: row;}
+
+.segment_two_rightside_top_container:hover,
+.segment_two_rightside_middle_container:hover,
+.segment_two_rightside_bottom_container:hover,
+.segment_four_rightside_top_container:hover,
+.segment_four_rightside_bottom_container:hover
+{background-color: rgba(192,201,200,0.75);}
+
+.segment_two_rightside_top_picture {width: 35%;
+margin-left: 16px;
+margin-right: 16px;}
+.segment_two_rightside_top_picture img {width: 100%;}
+.segment_two_rightside_top_text {width: 65%;}
+
+.segment_two_rightside_middle_container {display: flex;
+  flex-direction: row;}
+.segment_two_rightside_middle_picture {width: 35%;
+height: auto;
+margin-left: 16px;
+margin-right: 16px;}
+.segment_two_rightside_middle_picture img {width: 100%;
+height: auto;}
+.segment_two_rightside_middle_text {width: 65%;}
+
+.segment_two_rightside_bottom_container {display: flex;
+  flex-direction: row;}
+.segment_two_rightside_bottom_picture {width: 35%;
+height: auto;
+margin-left: 16px;
+margin-right: 16px;}
+.segment_two_rightside_bottom_picture img {width: 100%;
+height: auto;}
+.segment_two_rightside_bottom_text {width: 65%;}
+
+/* MEDIA INQUIRY TO ***NOT*** DISPLAY THE MOBILE VERSION OF THE PHOTOS IN THE
+"IT DOESN'T HURT TO KEEP PRACTICING" SEGMENT WHEN THE RESOLUTION IS ABOVE 480PX*/
+@media screen and (min-width: 480px) {
+.mobile-photo {display: none;}}
+
+/*MEDIA INQUIRY FOR HORIZONTAL SEGMENT "IT DOESN'T HURT TO KEEP PRACTICING"*/
+
+@media screen and (max-width: 480px) {
+
+.segment_two_overall_container {flex-direction: column;
+width: 100%;}
+
+.segment_two_leftside_container {display: none;}
+
+.segment_two_rightside_container {width: 100%;
+  padding-top: 16px;}
+
+.course_photos_original_size {display: none;}
+
+.segment_two_rightside_top_container, .segment_two_rightside_middle_container,
+.segment_two_rightside_bottom_container {flex-direction: column;
+  width: 100%;}
+
+.segment_two_rightside_middle_container {margin-top: 64px;
+margin-bottom: 64px;}
+
+.segment_two_rightside_top_picture, .segment_two_rightside_middle_picture,
+.segment_two_rightside_bottom_picture {width: 92%;
+margin: 0px 0px;
+padding-left: 16px;
+padding-right: 16px;}
+
+.mobile-photo {display: block;
+  width:100%;}
+
+.segment_two_rightside_top_text, .segment_two_rightside_middle_text,
+.segment_two_rightside_bottom_text {width: 96%;
+padding-left: 16px;}
+
+.segment_two_rightside_bottom_text {margin-bottom: 32px;}
+}
+/*END OF MEDIA INQUIRY FOR SEGMENT TWO*/
+
+
+/*HORIZONTAL SEGMENT FOR "START LEARNING"*/
+.segment_three_overall_container {
+display: flex;
+flex-direction: column;
+width: 970px;
+background-color: rgba(192,201,200,0.75);}
+
+.segment_three_top_horizontal_bar_container {padding-top: 32px;
+padding-bottom: 32px;
+text-align: center;}
+
+.segment_three_middle_horizontal_bar_container {display: flex;
+flex-direction: row;}
+.course_one_container {width: 28%;
+margin-left: 72px;
+background-color: white;}
+.course_one_image img {width: 100%;}
+.course_one_text {margin-left: 16px;
+margin-bottom: 24px;}
+.course_two_container {width: 28%;
+margin-left: 32px;
+margin-right: 32px;
+background-color: white;}
+.course_two_image img {width: 100%;}
+.course_two_text {margin-left: 16px;
+padding-bottom: 24px;}
+.course_three_container {width: 28%;
+margin-right: 72px;
+background-color: white;}
+.course_three_image img {width: 100%;}
+.course_three_text {margin-left: 16px;}
+
+.segment_three_bottom_horizontal_bar_container {display: flex;
+  flex-direction: row;
+margin-top:32px;
+margin-bottom: 32px;}
+.course_four_container {width: 28%;
+margin-left: 72px;
+background-color: white;}
+.course_four_image img {width: 100%;}
+.course_four_text {margin-left: 16px;
+padding-bottom: 24px;}
+.course_five_container {width: 28%;
+margin-left: 32px;
+margin-right: 32px;
+background-color: white;}
+.course_five_image img {width: 100%;}
+.course_five_text {margin-left: 16px;
+padding-bottom: 24px;}
+.course_six_container {width: 28%;
+margin-right: 72px;
+background-color: white;}
+.course_six_image img {width: 100%;}
+.course_six_text {margin-left: 16px;
+padding-bottom: 24px;}
+
+/* MEDIA INQUIRY FOR HORIZONTAL SEGMENT "START LEARNING"*/
+@media screen and (min-width: 480px) {.segment_three_mobile_overall_container {display: none;}}
+
+@media screen and (max-width: 480px) {
+.segment_three_overall_container {display: none;}
+
+.segment_three_mobile_overall_container {display: flex;
+flex-direction: column;
+width: 100%;}
+
+.segment_three_mobile_top_horizontal_bar_container {text-align: center;
+margin-top: 32px;
+margin-bottom: 16px;}
+
+.segment_three_mobile_courselist_container {padding-left: 16px;
+padding-right: 16px;}
+.segment_three_mobile_course_six_container {margin-bottom: 32px;}
+
+.segment_three_mobile_course_one_container, .segment_three_mobile_course_two_container,
+.segment_three_mobile_course_three_container, .segment_three_mobile_course_four_container,
+.segment_three_mobile_course_five_container, .segment_three_mobile_course_six_container {padding-top: 16px;
+padding-bottom: 24px;
+padding-left: 16px;
+background-color: rgba(192,201,200,0.75);}
+
+.segment_three_mobile_course_one_container, .segment_three_mobile_course_two_container,
+.segment_three_mobile_course_three_container, .segment_three_mobile_course_four_container,
+.segment_three_mobile_course_five_container {margin-bottom: 8px;}
+}
+/* END OF MEDIA INQUIRY FOR MOBILE SEGMENT THREE */
+
+/*HORIZONTAL SEGMENT "THESIS" */
+.segment_thesis_container {width: 970px;
+text-align: center;
+padding-top: 32px;
+padding-bottom: 32px;}
+
+
+/*HORIZONTAL SEGMENT CONTAINING VIDEO*/
+.segment_four_overall_container {display: flex;
+flex-direction: row;
+width: 970px;}
+
+.segment_four_leftside_container {width: 60%;
+  padding-left: 24px;
+  padding-right: 24px;}
+.video_container {width: 100%;}
+.video_container video {width: 100%; }
+.segment_four_leftside_text {padding-bottom: 32px;}
+.segment_four_leftside_text_1 {padding-top: 24px;
+padding-bottom: 8px;}
+
+.segment_four_rightside_container {width: 40%;}
+.segment_four_rightside_top_container {display: flex;
+flex-direction: row;}
+.segment_four_rightside_top_image {width:35%;
+margin: 16px 16px;}
+.segment_four_rightside_top_image img {width: 100%;}
+.segment_four_rightside_top_text {width: 65%;}
+
+.segment_four_rightside_bottom_container {display: flex;
+  flex-direction: row;;}
+.segment_four_rightside_bottom_image {width: 35%;
+margin: 16px 16px}
+.segment_four_rightside_bottom_image img {width: 100%;}
+.segment_four_rightside_bottom_text {width: 65%;}
+
+/* GREY LINE UNDER VIDEO SEGMENT*/
+.gray_line_container {width: 970px;
+display: flex;
+justify-content: center;}
+
+.gray_line {width: 100%;
+box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+border: 0.3px gray dotted;}
+
+/* FOOTER */
+.footer_text_container {display: flex;
+width: 970px;
+padding-top: 16px;}
+.footer_leftside_text {display: flex;
+flex-grow: 1;
+margin-left: 24px;}
+.footer_rightside_text {margin-right: 24px;}
+
+/* MEDIA INQUIRY FOR THESIS SEGMENT AND SEGMENT CONTAINING VIDEO */
+
+@media screen and (max-width: 480px) {
+.segment_thesis_container{width: 100%;
+  padding-bottom: 16px;}
+
+.segment_four_overall_container {width: 100%;}
+
+.segment_four_leftside_container {width: 100%;
+padding-left: 0px;
+padding-right: 0px; }
+
+.segment_four_leftside_text {display: none;}
+
+.segment_four_rightside_container {display: none;}
+
+.gray_line_container {width: 100%;
+margin-bottom: 24px;}
+
+footer {width: 100%;}
+
+.footer_text_container {margin-bottom: 16px;}
+
+.footer_leftside_text {margin-left: 16px;}
+
+.footer_rightside_text {margin-right: 16px;}
+
+.gray_line_mobile {margin: 0px 0px;
+padding: 0px 0px;}
+
+.footer_text_container {width: 100%;}
+}
+/* END OF MEDIA INQUIRTY FOR THESIS SEGMENT AND SEGMENT FOUR */
+
+/* MEDIA INQUIRY FOR GRAY LINES IN MOBILE VERSION */
+@media screen and (min-width: 480px) {
+  .gray_line_mobile {display: none;}
+}
+/* END OF MEDIA INQUIRY FOR GRAY LINES IN MOBILE VERSION */
+
+/* COMMON SPACING ACROSS THE PAGE */
+.mini_text_spacing {margin-top: 6px;
+margin-bottom: 6px;}
+
+/*FONTS*/
+.header_logo_font {font-family: "IM Fell DW Pica SC";
+font-size: 1.75rem;
+font-weight: 100;
+color: #F23546;}
+
+#header_colmar_font {font-weight: 700;
+color: black;}
+
+.header_nav_font {font-family: "spectral";
+font-size: 1.1rem;
+font-weight: 600;
+letter-spacing: -1px;}
+
+.header_nav_font a:link {color: black;
+text-decoration: none;}
+.header_nav_font a:visited: {color: black;}
+.header_nav_font a:hover{color: black;
+font-weight: 650;
+font-size: 1.1rem;}
+.header_nav_font a:active{color: black;}
+
+#first_headline_font {font-family: "junge";
+font-weight: 600;
+font-size: 2.5rem;
+color: #F23546;}
+
+#first_subheadline_font, .button {font-family: "spectral";
+font-size: 1.15rem;
+font-weight: 400;
+letter-spacing: -1px;}
+
+.button a {color: white;
+text-decoration: none;
+font-weight: 550;}
+
+.second_headline_font, .second_headline_mobile_font {font-size: 2rem;
+font-family: "junge";
+font-weight: 600;
+letter-spacing: -0.85px;}
+
+.third_headline_font, .third_headline_mobile_font {font-family: "spectral";
+font-size: 1.35rem;
+font-weight: 550;
+letter-spacing: -1px;}
+
+.mini_text_font {font-family: "arapey";
+letter-spacing: 0.3px;
+font-size: 1.0rem; }
+
+#testimonial_font {font-family: "arapey";
+font-weight: bold;}
+
+.course_links a:link {color: blue;}
+.course_links a:visited: {color: blue;}
+.course_links a:hover{color: blue;
+font-weight: 900;
+font-size: 1.1rem;}
+.course_links a:active{color: blue;}
+
+.footer_font {font-family: "arapey";
+letter-spacing: 0.3px;
+font-size: 0.9rem; }
+
+#terms_font {margin-right: 16px;}
